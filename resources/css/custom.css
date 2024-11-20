@@ -1,0 +1,154 @@
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/banjar-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    margin-bottom: -48px;
+}
+
+.news-section .card {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.description-section {
+    background-color: #f8f9fa;
+}
+
+.description-section .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.description-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.description-section h5 {
+    font-weight: 600;
+}
+
+.description-section i {
+    width: 25px;
+}
+
+.text-primary {
+    color: #0d6efd !important;
+}
+
+.carousel-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Smooth transition for carousel */
+.carousel-inner > .carousel-item {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #1e2a3b;
+    color: white;
+}
+
+.contact-section .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
+.contact-section .social-links a:hover {
+    background-color: white;
+    color: #1e2a3b !important;
+}
+
+/* FAQ Accordion Styles */
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.accordion-button {
+    padding: 1rem 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-body {
+    padding: 1rem 0;
+}
+
+/* Icon Styles */
+.contact-section i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fixed Navbar Adjustment */
+body {
+    padding-top: 56px; /* Adjust this value based on your navbar height */
+}
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+/* Active state for nav links */
+.navbar-nav .nav-link[data-scroll]:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Scroll padding for better positioning */
+html {
+    scroll-padding-top: 60px; /* Adjust based on navbar height */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 56px;
+    }
+    html {
+        scroll-padding-top: 56px;
+    }
+}
